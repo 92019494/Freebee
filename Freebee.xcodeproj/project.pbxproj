@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EA9FD632DE78FC1C7E64653 /* Pods_FreebeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499D571C36AE466AFE78DECE /* Pods_FreebeeTests.framework */; };
+		6E99A65CAD60B04604403CFD /* Pods_Freebee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B266FEAE7C52966626F5AD1 /* Pods_Freebee.framework */; };
+		821CF5FA2FC1E892658BC423 /* Pods_FreebeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493E946CED833BA3DEF1FC83 /* Pods_FreebeeUITests.framework */; };
+		920CCC5722E7EA8E00BBE1A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 920CCC5622E7EA8D00BBE1A1 /* GoogleService-Info.plist */; };
+		9263400D22EB33C100FB7C96 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263400C22EB33C100FB7C96 /* RegisterViewController.swift */; };
+		9264322622CC4E81006D9340 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264322522CC4E81006D9340 /* SettingsViewController.swift */; };
+		9264322922CC6728006D9340 /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264322822CC6728006D9340 /* WatchListTableViewCell.swift */; };
+		92D7599C22CAF86C00C1AAA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7599B22CAF86C00C1AAA2 /* AppDelegate.swift */; };
+		92D759A122CAF86C00C1AAA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D7599F22CAF86C00C1AAA2 /* Main.storyboard */; };
+		92D759A322CAF87600C1AAA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D759A222CAF87600C1AAA2 /* Assets.xcassets */; };
+		92D759A622CAF87600C1AAA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D759A422CAF87600C1AAA2 /* LaunchScreen.storyboard */; };
+		92D759B122CAF87700C1AAA2 /* FreebeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D759B022CAF87700C1AAA2 /* FreebeeTests.swift */; };
+		92D759BC22CAF87700C1AAA2 /* FreebeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D759BB22CAF87700C1AAA2 /* FreebeeUITests.swift */; };
+		92D759CA22CAF8E800C1AAA2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D759C922CAF8E800C1AAA2 /* SignInViewController.swift */; };
+		92D759CC22CB0F5300C1AAA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D759CB22CB0F5300C1AAA2 /* HomeViewController.swift */; };
+		92D759CE22CB138B00C1AAA2 /* FreebeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D759CD22CB138A00C1AAA2 /* FreebeeViewController.swift */; };
+		92D759D022CB2BB900C1AAA2 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D759CF22CB2BB900C1AAA2 /* TermsViewController.swift */; };
+		92D759D222CB848300C1AAA2 /* FreebeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D759D122CB848300C1AAA2 /* FreebeeTableViewCell.swift */; };
+		92EF244B22CEEDF400E810B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF244A22CEEDF400E810B0 /* User.swift */; };
+		92EF244E22CEF1B500E810B0 /* GiveawayDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF244D22CEF1B500E810B0 /* GiveawayDataAccess.swift */; };
+		92EF245022CEF1EF00E810B0 /* Giveaway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF244F22CEF1EF00E810B0 /* Giveaway.swift */; };
+		92EF245422CEF97D00E810B0 /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF245322CEF97D00E810B0 /* Advertiser.swift */; };
+		92EF245622CF9A4000E810B0 /* GiveawayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF245522CF9A4000E810B0 /* GiveawayDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92D759AD22CAF87700C1AAA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92D7599022CAF86B00C1AAA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92D7599722CAF86C00C1AAA2;
+			remoteInfo = Freebee;
+		};
+		92D759B822CAF87700C1AAA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92D7599022CAF86B00C1AAA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92D7599722CAF86C00C1AAA2;
+			remoteInfo = Freebee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36712AC8C494F53D9BFB8859 /* Pods-FreebeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreebeeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreebeeUITests/Pods-FreebeeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		48386C0045DA88FCED5D4801 /* Pods-FreebeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreebeeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreebeeUITests/Pods-FreebeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		493E946CED833BA3DEF1FC83 /* Pods_FreebeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreebeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		499D571C36AE466AFE78DECE /* Pods_FreebeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreebeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B266FEAE7C52966626F5AD1 /* Pods_Freebee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freebee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		920CCC5622E7EA8D00BBE1A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		920CCC5822E8107E00BBE1A1 /* Freebee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Freebee.entitlements; sourceTree = "<group>"; };
+		9263400C22EB33C100FB7C96 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9264322522CC4E81006D9340 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9264322822CC6728006D9340 /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
+		92D7599822CAF86C00C1AAA2 /* Freebee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freebee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D7599B22CAF86C00C1AAA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92D759A022CAF86C00C1AAA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92D759A222CAF87600C1AAA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92D759A522CAF87600C1AAA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92D759A722CAF87600C1AAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D759AC22CAF87700C1AAA2 /* FreebeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreebeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D759B022CAF87700C1AAA2 /* FreebeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreebeeTests.swift; sourceTree = "<group>"; };
+		92D759B222CAF87700C1AAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D759B722CAF87700C1AAA2 /* FreebeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreebeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D759BB22CAF87700C1AAA2 /* FreebeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreebeeUITests.swift; sourceTree = "<group>"; };
+		92D759BD22CAF87700C1AAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D759C922CAF8E800C1AAA2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		92D759CB22CB0F5300C1AAA2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		92D759CD22CB138A00C1AAA2 /* FreebeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreebeeViewController.swift; sourceTree = "<group>"; };
+		92D759CF22CB2BB900C1AAA2 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		92D759D122CB848300C1AAA2 /* FreebeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreebeeTableViewCell.swift; sourceTree = "<group>"; };
+		92EF244A22CEEDF400E810B0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		92EF244D22CEF1B500E810B0 /* GiveawayDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDataAccess.swift; sourceTree = "<group>"; };
+		92EF244F22CEF1EF00E810B0 /* Giveaway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giveaway.swift; sourceTree = "<group>"; };
+		92EF245322CEF97D00E810B0 /* Advertiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
+		92EF245522CF9A4000E810B0 /* GiveawayDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailViewController.swift; sourceTree = "<group>"; };
+		A6C4A61B62664B1F4D35958F /* Pods-FreebeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreebeeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreebeeTests/Pods-FreebeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB07FDD85FC2C0ADC8A157C2 /* Pods-Freebee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebee.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freebee/Pods-Freebee.release.xcconfig"; sourceTree = "<group>"; };
+		C97517C453790A16DE761F91 /* Pods-FreebeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreebeeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreebeeTests/Pods-FreebeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC17E4DE66A1426FD3ACAC0C /* Pods-Freebee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freebee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Freebee/Pods-Freebee.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92D7599522CAF86C00C1AAA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E99A65CAD60B04604403CFD /* Pods_Freebee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D759A922CAF87700C1AAA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA9FD632DE78FC1C7E64653 /* Pods_FreebeeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D759B422CAF87700C1AAA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				821CF5FA2FC1E892658BC423 /* Pods_FreebeeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32FDDC93C51CE5C54887D462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B266FEAE7C52966626F5AD1 /* Pods_Freebee.framework */,
+				499D571C36AE466AFE78DECE /* Pods_FreebeeTests.framework */,
+				493E946CED833BA3DEF1FC83 /* Pods_FreebeeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E33321434EA8170C55D28E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC17E4DE66A1426FD3ACAC0C /* Pods-Freebee.debug.xcconfig */,
+				AB07FDD85FC2C0ADC8A157C2 /* Pods-Freebee.release.xcconfig */,
+				C97517C453790A16DE761F91 /* Pods-FreebeeTests.debug.xcconfig */,
+				A6C4A61B62664B1F4D35958F /* Pods-FreebeeTests.release.xcconfig */,
+				48386C0045DA88FCED5D4801 /* Pods-FreebeeUITests.debug.xcconfig */,
+				36712AC8C494F53D9BFB8859 /* Pods-FreebeeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9264322722CC66CC006D9340 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				92D759D122CB848300C1AAA2 /* FreebeeTableViewCell.swift */,
+				9264322822CC6728006D9340 /* WatchListTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		92D7598F22CAF86B00C1AAA2 = {
+			isa = PBXGroup;
+			children = (
+				92D7599A22CAF86C00C1AAA2 /* Freebee */,
+				92D759AF22CAF87700C1AAA2 /* FreebeeTests */,
+				92D759BA22CAF87700C1AAA2 /* FreebeeUITests */,
+				92D7599922CAF86C00C1AAA2 /* Products */,
+				7E33321434EA8170C55D28E1 /* Pods */,
+				32FDDC93C51CE5C54887D462 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		92D7599922CAF86C00C1AAA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92D7599822CAF86C00C1AAA2 /* Freebee.app */,
+				92D759AC22CAF87700C1AAA2 /* FreebeeTests.xctest */,
+				92D759B722CAF87700C1AAA2 /* FreebeeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92D7599A22CAF86C00C1AAA2 /* Freebee */ = {
+			isa = PBXGroup;
+			children = (
+				920CCC5822E8107E00BBE1A1 /* Freebee.entitlements */,
+				92EF244C22CEF18C00E810B0 /* DataAccess */,
+				92EF244922CEEDC500E810B0 /* Models */,
+				9264322722CC66CC006D9340 /* TableViewCells */,
+				92D7599B22CAF86C00C1AAA2 /* AppDelegate.swift */,
+				92D759A222CAF87600C1AAA2 /* Assets.xcassets */,
+				92D7599F22CAF86C00C1AAA2 /* Main.storyboard */,
+				92D759A422CAF87600C1AAA2 /* LaunchScreen.storyboard */,
+				92D759CB22CB0F5300C1AAA2 /* HomeViewController.swift */,
+				920CCC5622E7EA8D00BBE1A1 /* GoogleService-Info.plist */,
+				92D759A722CAF87600C1AAA2 /* Info.plist */,
+				92D759C922CAF8E800C1AAA2 /* SignInViewController.swift */,
+				92D759CD22CB138A00C1AAA2 /* FreebeeViewController.swift */,
+				92D759CF22CB2BB900C1AAA2 /* TermsViewController.swift */,
+				9264322522CC4E81006D9340 /* SettingsViewController.swift */,
+				92EF245522CF9A4000E810B0 /* GiveawayDetailViewController.swift */,
+				9263400C22EB33C100FB7C96 /* RegisterViewController.swift */,
+			);
+			path = Freebee;
+			sourceTree = "<group>";
+		};
+		92D759AF22CAF87700C1AAA2 /* FreebeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				92D759B022CAF87700C1AAA2 /* FreebeeTests.swift */,
+				92D759B222CAF87700C1AAA2 /* Info.plist */,
+			);
+			path = FreebeeTests;
+			sourceTree = "<group>";
+		};
+		92D759BA22CAF87700C1AAA2 /* FreebeeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92D759BB22CAF87700C1AAA2 /* FreebeeUITests.swift */,
+				92D759BD22CAF87700C1AAA2 /* Info.plist */,
+			);
+			path = FreebeeUITests;
+			sourceTree = "<group>";
+		};
+		92EF244922CEEDC500E810B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92EF244A22CEEDF400E810B0 /* User.swift */,
+				92EF244F22CEF1EF00E810B0 /* Giveaway.swift */,
+				92EF245322CEF97D00E810B0 /* Advertiser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92EF244C22CEF18C00E810B0 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				92EF244D22CEF1B500E810B0 /* GiveawayDataAccess.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92D7599722CAF86C00C1AAA2 /* Freebee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D759C022CAF87700C1AAA2 /* Build configuration list for PBXNativeTarget "Freebee" */;
+			buildPhases = (
+				66558703FD47CF20D63028F3 /* [CP] Check Pods Manifest.lock */,
+				92D7599422CAF86C00C1AAA2 /* Sources */,
+				92D7599522CAF86C00C1AAA2 /* Frameworks */,
+				92D7599622CAF86C00C1AAA2 /* Resources */,
+				816F9A35F768C2AFB938DA24 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Freebee;
+			productName = Freebee;
+			productReference = 92D7599822CAF86C00C1AAA2 /* Freebee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92D759AB22CAF87700C1AAA2 /* FreebeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D759C322CAF87700C1AAA2 /* Build configuration list for PBXNativeTarget "FreebeeTests" */;
+			buildPhases = (
+				02FFB58405FDEFE01C4E2336 /* [CP] Check Pods Manifest.lock */,
+				92D759A822CAF87700C1AAA2 /* Sources */,
+				92D759A922CAF87700C1AAA2 /* Frameworks */,
+				92D759AA22CAF87700C1AAA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92D759AE22CAF87700C1AAA2 /* PBXTargetDependency */,
+			);
+			name = FreebeeTests;
+			productName = FreebeeTests;
+			productReference = 92D759AC22CAF87700C1AAA2 /* FreebeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92D759B622CAF87700C1AAA2 /* FreebeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D759C622CAF87700C1AAA2 /* Build configuration list for PBXNativeTarget "FreebeeUITests" */;
+			buildPhases = (
+				CE01C74BCA7C693C388ECA28 /* [CP] Check Pods Manifest.lock */,
+				92D759B322CAF87700C1AAA2 /* Sources */,
+				92D759B422CAF87700C1AAA2 /* Frameworks */,
+				92D759B522CAF87700C1AAA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92D759B922CAF87700C1AAA2 /* PBXTargetDependency */,
+			);
+			name = FreebeeUITests;
+			productName = FreebeeUITests;
+			productReference = 92D759B722CAF87700C1AAA2 /* FreebeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92D7599022CAF86B00C1AAA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = EmeraldApps;
+				TargetAttributes = {
+					92D7599722CAF86C00C1AAA2 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					92D759AB22CAF87700C1AAA2 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 92D7599722CAF86C00C1AAA2;
+					};
+					92D759B622CAF87700C1AAA2 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 92D7599722CAF86C00C1AAA2;
+					};
+				};
+			};
+			buildConfigurationList = 92D7599322CAF86B00C1AAA2 /* Build configuration list for PBXProject "Freebee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92D7598F22CAF86B00C1AAA2;
+			productRefGroup = 92D7599922CAF86C00C1AAA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92D7599722CAF86C00C1AAA2 /* Freebee */,
+				92D759AB22CAF87700C1AAA2 /* FreebeeTests */,
+				92D759B622CAF87700C1AAA2 /* FreebeeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92D7599622CAF86C00C1AAA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D759A622CAF87600C1AAA2 /* LaunchScreen.storyboard in Resources */,
+				920CCC5722E7EA8E00BBE1A1 /* GoogleService-Info.plist in Resources */,
+				92D759A322CAF87600C1AAA2 /* Assets.xcassets in Resources */,
+				92D759A122CAF86C00C1AAA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D759AA22CAF87700C1AAA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D759B522CAF87700C1AAA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02FFB58405FDEFE01C4E2336 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreebeeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66558703FD47CF20D63028F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Freebee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		816F9A35F768C2AFB938DA24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Freebee/Pods-Freebee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Freebee/Pods-Freebee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE01C74BCA7C693C388ECA28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreebeeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92D7599422CAF86C00C1AAA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EF244E22CEF1B500E810B0 /* GiveawayDataAccess.swift in Sources */,
+				92EF245422CEF97D00E810B0 /* Advertiser.swift in Sources */,
+				92D759CA22CAF8E800C1AAA2 /* SignInViewController.swift in Sources */,
+				92D7599C22CAF86C00C1AAA2 /* AppDelegate.swift in Sources */,
+				92D759CC22CB0F5300C1AAA2 /* HomeViewController.swift in Sources */,
+				92D759CE22CB138B00C1AAA2 /* FreebeeViewController.swift in Sources */,
+				92EF245022CEF1EF00E810B0 /* Giveaway.swift in Sources */,
+				92D759D222CB848300C1AAA2 /* FreebeeTableViewCell.swift in Sources */,
+				9264322922CC6728006D9340 /* WatchListTableViewCell.swift in Sources */,
+				9263400D22EB33C100FB7C96 /* RegisterViewController.swift in Sources */,
+				92EF245622CF9A4000E810B0 /* GiveawayDetailViewController.swift in Sources */,
+				92D759D022CB2BB900C1AAA2 /* TermsViewController.swift in Sources */,
+				92EF244B22CEEDF400E810B0 /* User.swift in Sources */,
+				9264322622CC4E81006D9340 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D759A822CAF87700C1AAA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D759B122CAF87700C1AAA2 /* FreebeeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D759B322CAF87700C1AAA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D759BC22CAF87700C1AAA2 /* FreebeeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92D759AE22CAF87700C1AAA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92D7599722CAF86C00C1AAA2 /* Freebee */;
+			targetProxy = 92D759AD22CAF87700C1AAA2 /* PBXContainerItemProxy */;
+		};
+		92D759B922CAF87700C1AAA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92D7599722CAF86C00C1AAA2 /* Freebee */;
+			targetProxy = 92D759B822CAF87700C1AAA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92D7599F22CAF86C00C1AAA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92D759A022CAF86C00C1AAA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92D759A422CAF87600C1AAA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92D759A522CAF87600C1AAA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92D759BE22CAF87700C1AAA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92D759BF22CAF87700C1AAA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92D759C122CAF87700C1AAA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC17E4DE66A1426FD3ACAC0C /* Pods-Freebee.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Freebee/Freebee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46PM3974Y4;
+				INFOPLIST_FILE = Freebee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbyanthony.Freebee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92D759C222CAF87700C1AAA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB07FDD85FC2C0ADC8A157C2 /* Pods-Freebee.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Freebee/Freebee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46PM3974Y4;
+				INFOPLIST_FILE = Freebee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbyanthony.Freebee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92D759C422CAF87700C1AAA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97517C453790A16DE761F91 /* Pods-FreebeeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46PM3974Y4;
+				INFOPLIST_FILE = FreebeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = appsbyanthony.FreebeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freebee.app/Freebee";
+			};
+			name = Debug;
+		};
+		92D759C522CAF87700C1AAA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C4A61B62664B1F4D35958F /* Pods-FreebeeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46PM3974Y4;
+				INFOPLIST_FILE = FreebeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = appsbyanthony.FreebeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freebee.app/Freebee";
+			};
+			name = Release;
+		};
+		92D759C722CAF87700C1AAA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48386C0045DA88FCED5D4801 /* Pods-FreebeeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46PM3974Y4;
+				INFOPLIST_FILE = FreebeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = appsbyanthony.FreebeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Freebee;
+			};
+			name = Debug;
+		};
+		92D759C822CAF87700C1AAA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36712AC8C494F53D9BFB8859 /* Pods-FreebeeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46PM3974Y4;
+				INFOPLIST_FILE = FreebeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = appsbyanthony.FreebeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Freebee;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92D7599322CAF86B00C1AAA2 /* Build configuration list for PBXProject "Freebee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D759BE22CAF87700C1AAA2 /* Debug */,
+				92D759BF22CAF87700C1AAA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D759C022CAF87700C1AAA2 /* Build configuration list for PBXNativeTarget "Freebee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D759C122CAF87700C1AAA2 /* Debug */,
+				92D759C222CAF87700C1AAA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D759C322CAF87700C1AAA2 /* Build configuration list for PBXNativeTarget "FreebeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D759C422CAF87700C1AAA2 /* Debug */,
+				92D759C522CAF87700C1AAA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D759C622CAF87700C1AAA2 /* Build configuration list for PBXNativeTarget "FreebeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D759C722CAF87700C1AAA2 /* Debug */,
+				92D759C822CAF87700C1AAA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92D7599022CAF86B00C1AAA2 /* Project object */;
+}

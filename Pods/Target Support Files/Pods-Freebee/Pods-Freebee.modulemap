@@ -1,0 +1,6 @@
+framework module Pods_Freebee {
+  umbrella header "Pods-Freebee-umbrella.h"
+
+  export *
+  module * { export * }
+}
