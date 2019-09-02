@@ -7,32 +7,33 @@
 //
 
 import UIKit
+import Firebase
 
 class User {
     
     
     // Properties
-    var user_id: Int
+
     var name: String
-    var phone_number: String
+    var phoneNumber: String
     var address: String
-    var city: String
-    var age: Int
-    var member_since: Date
+    var region: String
+    var age: String
+    var email: String
     
-    init?(user_id: Int, name: String, phone_number: String, address: String, city: String, age:Int, member_since: Date){
+  init?(  name: String, phoneNumber: String, address: String, region: String, age:String, email:String){
         
-        if name.isEmpty || phone_number.isEmpty || address.isEmpty {
+        if name.isEmpty || phoneNumber.isEmpty || address.isEmpty {
             return nil
         }
         
-        self.user_id = user_id
+
         self.name = name
-        self.phone_number = phone_number
+        self.phoneNumber = phoneNumber
         self.address = address
-        self.city = city
+        self.region = region
         self.age = age
-        self.member_since = member_since
+        self.email = email
         
     }
     

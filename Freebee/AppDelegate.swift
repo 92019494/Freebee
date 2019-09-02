@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-        //checkUserStatus()
+        checkUserStatus()
         return true
     }
     
@@ -58,7 +58,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     fileprivate func checkUserStatus() {
-        if AccessToken.isCurrentAccessTokenActive {
+        
+        if Auth.auth().currentUser  != nil
+        {
             print("token active")
             let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let vc : UIViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! UINavigationController

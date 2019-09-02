@@ -10,32 +10,52 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    let layer = CAGradientLayer()
+    let viewLayer = CAGradientLayer()
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var updateButton: UIButton!
+    @IBOutlet weak var nameHelpText: UILabel!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var ageHelpText: UILabel!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var phoneHelpText: UILabel!
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var addressHelpText: UILabel!
+    @IBOutlet weak var regionTextField: UITextField!
+    @IBOutlet weak var regionHelpText: UILabel!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var emailHelpText: UILabel!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordHelpText: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.navigationController?.navigationBar.barTintColor = UIColor.blue
         view.backgroundColor = UIColor.clear
     
-        layer.frame = view.bounds
-        layer.colors = [UIColor.blue.cgColor, UIColor.purple.cgColor]
-        layer.locations = [0.05,1]
-        layer.startPoint = CGPoint(x:0.5,y:0)
-        layer.endPoint = CGPoint(x:0.5, y:1)
-        view.layer.insertSublayer(layer, at: 0)
+        updateButton.layer.cornerRadius = updateButton.bounds.height / 2
+        updateButton.applyButtonGradient()
+        
+        let gradientView = GradientView(frame: self.view.bounds)
+        view.insertSubview(gradientView, at: 0)
     }
     
-
+    
     override func viewDidLayoutSubviews() {
-        layer.frame = view.bounds
+        
     }
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func hideHelpText(){
+        nameHelpText.isHidden = true
+        ageHelpText.isHidden = true
+        phoneHelpText.isHidden = true
+        addressHelpText.isHidden = true
+        regionHelpText.isHidden = true
+        emailHelpText.isHidden = true
+        passwordHelpText.isHidden = true
     }
-    */
-
+    
+    
 }

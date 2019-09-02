@@ -13,26 +13,21 @@ class TermsViewController: UIViewController {
     
     
     @IBOutlet weak var myScrollView: UIScrollView!
-    let layer = CAGradientLayer()
+    let viewLayer = CAGradientLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         myScrollView.layer.cornerRadius = 15
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.navigationController?.navigationBar.barTintColor = UIColor.blue
         view.backgroundColor = UIColor.clear
         
-        layer.frame = view.bounds
-        layer.colors = [UIColor.blue.cgColor, UIColor.purple.cgColor]
-        layer.locations = [0.05,1]
-        layer.startPoint = CGPoint(x:0.5,y:0)
-        layer.endPoint = CGPoint(x:0.5, y:1)
-        view.layer.insertSublayer(layer, at: 0)
+        let gradientView = GradientView(frame: self.view.bounds)
+        view.insertSubview(gradientView, at: 0)
+     
     }
     
     override func viewDidLayoutSubviews() {
-        layer.frame = view.bounds
+
     }
 
     /*

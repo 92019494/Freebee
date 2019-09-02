@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class GiveawayDetailViewController: UIViewController {
-    let layer = CAGradientLayer()
+    let viewLayer = CAGradientLayer()
     let userID = "1"
+    
     
     @IBOutlet weak var myScrollView: UIScrollView!
     @IBOutlet weak var myImageView: UIImageView!
@@ -23,8 +25,17 @@ class GiveawayDetailViewController: UIViewController {
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var adButton: UIButton!
     
-    var giveaway = Giveaway(giveawayID: "a", name: "a", cost: "a", image: "a", dateClosing: "a", details: "a", category: "a", shareEntries: [""], adEntries: [""], location: "a", advertiserID: "a", advertiserName: "a")
+    var user = User(name: "", phoneNumber: "", address: "l", region: "k", age: "k", email: "k")
+
+
+    var giveaway = Giveaway(giveawayID: "a", active: false, winner: "", name: "a", cost: "a", image: "a", dateClosing: Timestamp(), details: "a", category: "a", shareEntries: [""], adEntries: [""], location: "a", code: "", advertiserID: "a", advertiserName: "a")
     
+  
+    let adButtonLayer = CAGradientLayer()
+    let adShapeLayer = CAShapeLayer()
+    let shareButtonLayer = CAGradientLayer()
+    let shareShapeLayer = CAShapeLayer()
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,62 +44,91 @@ class GiveawayDetailViewController: UIViewController {
         businessLabel.text = giveaway?.advertiserName
         myImageView.image = UIImage(named: giveaway?.image ?? "")
         giveawayLabel.text = giveaway?.name
-        dateClosing.text = giveaway?.dateClosing
+   
+        
+        // counting down closing date label
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (Timer) in
+            self.dateClosing.text = self.giveaway?.dateClosing.dateValue().getTime()
+        }
+        
         costLabel.text = giveaway?.cost
         locationLabel.text = giveaway?.location
         prizeDetailLabel.text = giveaway?.details
         
         // setting up share button
         shareButton.backgroundColor = UIColor.clear
-        shareButton.layer.cornerRadius = 20
-        shareButton.setTitleColor(UIColor.gray, for: .normal)
-        shareButton.layer.borderWidth = 3
-        shareButton.layer.borderColor = UIColor.blue.cgColor
-        if (giveaway?.shareEntries.contains(userID))!{
+        shareButton.layer.cornerRadius = shareButton.bounds.height / 2
+        shareButton.setTitleColor(UIColor.darkGray, for: .normal)
+
+        if (giveaway?.shareEntries.contains(user!.email))!{
             shareButton.layer.borderColor = UIColor.clear.cgColor
             shareButton.setTitle("Completed", for: .normal)
-            shareButton.applyGradient(colours: [UIColor.blue, UIColor.purple])
+            shareButton.applyButtonGradient()
             shareButton.setTitleColor(UIColor.white, for: .normal)
+        } else {
+            
+            shareButton.setTitle("Share To Enter", for: .normal)
+            shareButton.applyBorder(layer: shareButtonLayer, shape: shareShapeLayer)
+            
         }
         
         // setting up ad button
         adButton.backgroundColor = UIColor.clear
-        adButton.layer.cornerRadius = 20
-        adButton.setTitleColor(UIColor.gray, for: .normal)
-        adButton.layer.borderWidth = 3
-        adButton.layer.borderColor = UIColor.blue.cgColor
+        adButton.layer.cornerRadius = adButton.bounds.height / 2
+        adButton.setTitleColor(UIColor.darkGray, for: .normal)
+ 
         
     
-        if (giveaway?.adEntries.contains(userID))!{
+        if ((giveaway?.adEntries.contains(user!.email))!){
             adButton.layer.borderColor = UIColor.clear.cgColor
             adButton.setTitle("Completed", for: .normal)
-            adButton.applyGradient(colours: [UIColor.blue, UIColor.purple])
+            adButton.applyButtonGradient()
             adButton.setTitleColor(UIColor.white, for: .normal)
+        } else {
+            
+            adButton.setTitle("Watch Ad To Enter", for: .normal)
+            adButton.applyBorder(layer: adButtonLayer, shape: adShapeLayer)
+            
         }
         
-        //setting up navigation controller
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.navigationController?.navigationBar.barTintColor = UIColor.blue
+        
+
         myScrollView.layer.cornerRadius = 15
         view.backgroundColor = UIColor.clear
         
-        layer.frame = view.bounds
-        layer.colors = [UIColor.blue.cgColor, UIColor.purple.cgColor]
-        layer.locations = [0.05,1]
-        layer.startPoint = CGPoint(x:0.5,y:0)
-        layer.endPoint = CGPoint(x:0.5, y:1)
-        view.layer.insertSublayer(layer, at: 0)
+        let gradientView = GradientView(frame: self.view.bounds)
+        view.insertSubview(gradientView, at: 0)
     }
     
     override func viewDidLayoutSubviews() {
-        layer.frame = view.bounds
+        // resizing button borders
+        adButtonLayer.frame = CGRect(x: 0, y: 0, width: view.bounds.width - 160, height: 50)
+        adShapeLayer.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: view.bounds.width - 160, height: 50), cornerRadius: 25).cgPath
+        shareButtonLayer.frame = CGRect(x: 0, y: 0, width: view.bounds.width - 160, height: 50)
+        shareShapeLayer.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: view.bounds.width - 160, height: 50), cornerRadius: 25).cgPath
     }
 
+    
     @IBAction func shareButtonClicked(_ sender: Any) {
         print("Share Button Clicked")
+        if (giveaway?.shareEntries.contains(user!.email))!{
+            print("already shared")
+        } else {
+            db.collection("giveaways").document(giveaway!.giveawayID).setData([
+                "shareEntries": [ user!.email ]
+                ], merge: true)
+        }
     }
+    
     @IBAction func adButtonClicked(_ sender: Any) {
         print("Ad Button Clicked")
+        if (giveaway?.adEntries.contains(user!.email))!{
+            print("already watched")
+        } else {
+            db.collection("giveaways").document(giveaway!.giveawayID).setData([
+                "adEntries": [ user!.email ]
+                ], merge: true)
+        }
     }
     /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -97,4 +137,25 @@ class GiveawayDetailViewController: UIViewController {
     }
     */
 
+
+}
+extension Date {
+    
+    func getTime() -> String{
+        
+        let futureDate = self
+        let now = Date()
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .abbreviated // May delete the word brief to let Xcode show you the other options
+        formatter.allowedUnits = [.day, .hour, .minute, .second]
+        formatter.maximumUnitCount = 2   // Show just one unit (i.e. 1d vs. 1d 6hrs)
+        
+        // force unwrapped
+        let formattedString = formatter.string(from: now, to: futureDate)!
+        if formattedString.contains("-"){
+            return "Winner is being drawn"
+        } else {
+        return formatter.string(from: now, to: futureDate)!
+        }
+    }
 }

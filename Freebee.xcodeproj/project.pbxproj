@@ -11,6 +11,8 @@
 		6E99A65CAD60B04604403CFD /* Pods_Freebee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B266FEAE7C52966626F5AD1 /* Pods_Freebee.framework */; };
 		821CF5FA2FC1E892658BC423 /* Pods_FreebeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493E946CED833BA3DEF1FC83 /* Pods_FreebeeUITests.framework */; };
 		920CCC5722E7EA8E00BBE1A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 920CCC5622E7EA8D00BBE1A1 /* GoogleService-Info.plist */; };
+		9215BC6B22EE84650063CCB4 /* ViewPrizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9215BC6922EE84650063CCB4 /* ViewPrizeViewController.swift */; };
+		9215BC6F22F04D560063CCB4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9215BC6E22F04D560063CCB4 /* GradientView.swift */; };
 		9263400D22EB33C100FB7C96 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263400C22EB33C100FB7C96 /* RegisterViewController.swift */; };
 		9264322622CC4E81006D9340 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264322522CC4E81006D9340 /* SettingsViewController.swift */; };
 		9264322922CC6728006D9340 /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9264322822CC6728006D9340 /* WatchListTableViewCell.swift */; };
@@ -26,7 +28,6 @@
 		92D759D022CB2BB900C1AAA2 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D759CF22CB2BB900C1AAA2 /* TermsViewController.swift */; };
 		92D759D222CB848300C1AAA2 /* FreebeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D759D122CB848300C1AAA2 /* FreebeeTableViewCell.swift */; };
 		92EF244B22CEEDF400E810B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF244A22CEEDF400E810B0 /* User.swift */; };
-		92EF244E22CEF1B500E810B0 /* GiveawayDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF244D22CEF1B500E810B0 /* GiveawayDataAccess.swift */; };
 		92EF245022CEF1EF00E810B0 /* Giveaway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF244F22CEF1EF00E810B0 /* Giveaway.swift */; };
 		92EF245422CEF97D00E810B0 /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF245322CEF97D00E810B0 /* Advertiser.swift */; };
 		92EF245622CF9A4000E810B0 /* GiveawayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF245522CF9A4000E810B0 /* GiveawayDetailViewController.swift */; };
@@ -57,6 +58,8 @@
 		7B266FEAE7C52966626F5AD1 /* Pods_Freebee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freebee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		920CCC5622E7EA8D00BBE1A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		920CCC5822E8107E00BBE1A1 /* Freebee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Freebee.entitlements; sourceTree = "<group>"; };
+		9215BC6922EE84650063CCB4 /* ViewPrizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPrizeViewController.swift; sourceTree = "<group>"; };
+		9215BC6E22F04D560063CCB4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		9263400C22EB33C100FB7C96 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9264322522CC4E81006D9340 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9264322822CC6728006D9340 /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
@@ -78,7 +81,6 @@
 		92D759CF22CB2BB900C1AAA2 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		92D759D122CB848300C1AAA2 /* FreebeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreebeeTableViewCell.swift; sourceTree = "<group>"; };
 		92EF244A22CEEDF400E810B0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		92EF244D22CEF1B500E810B0 /* GiveawayDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDataAccess.swift; sourceTree = "<group>"; };
 		92EF244F22CEF1EF00E810B0 /* Giveaway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giveaway.swift; sourceTree = "<group>"; };
 		92EF245322CEF97D00E810B0 /* Advertiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
 		92EF245522CF9A4000E810B0 /* GiveawayDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9215BC6D22F04D380063CCB4 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				9215BC6E22F04D560063CCB4 /* GradientView.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		9264322722CC66CC006D9340 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,8 +183,8 @@
 		92D7599A22CAF86C00C1AAA2 /* Freebee */ = {
 			isa = PBXGroup;
 			children = (
+				9215BC6D22F04D380063CCB4 /* Extras */,
 				920CCC5822E8107E00BBE1A1 /* Freebee.entitlements */,
-				92EF244C22CEF18C00E810B0 /* DataAccess */,
 				92EF244922CEEDC500E810B0 /* Models */,
 				9264322722CC66CC006D9340 /* TableViewCells */,
 				92D7599B22CAF86C00C1AAA2 /* AppDelegate.swift */,
@@ -190,6 +200,7 @@
 				9264322522CC4E81006D9340 /* SettingsViewController.swift */,
 				92EF245522CF9A4000E810B0 /* GiveawayDetailViewController.swift */,
 				9263400C22EB33C100FB7C96 /* RegisterViewController.swift */,
+				9215BC6922EE84650063CCB4 /* ViewPrizeViewController.swift */,
 			);
 			path = Freebee;
 			sourceTree = "<group>";
@@ -220,14 +231,6 @@
 				92EF245322CEF97D00E810B0 /* Advertiser.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		92EF244C22CEF18C00E810B0 /* DataAccess */ = {
-			isa = PBXGroup;
-			children = (
-				92EF244D22CEF1B500E810B0 /* GiveawayDataAccess.swift */,
-			);
-			path = DataAccess;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,9 +486,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92EF244E22CEF1B500E810B0 /* GiveawayDataAccess.swift in Sources */,
 				92EF245422CEF97D00E810B0 /* Advertiser.swift in Sources */,
 				92D759CA22CAF8E800C1AAA2 /* SignInViewController.swift in Sources */,
+				9215BC6F22F04D560063CCB4 /* GradientView.swift in Sources */,
 				92D7599C22CAF86C00C1AAA2 /* AppDelegate.swift in Sources */,
 				92D759CC22CB0F5300C1AAA2 /* HomeViewController.swift in Sources */,
 				92D759CE22CB138B00C1AAA2 /* FreebeeViewController.swift in Sources */,
@@ -494,6 +497,7 @@
 				9264322922CC6728006D9340 /* WatchListTableViewCell.swift in Sources */,
 				9263400D22EB33C100FB7C96 /* RegisterViewController.swift in Sources */,
 				92EF245622CF9A4000E810B0 /* GiveawayDetailViewController.swift in Sources */,
+				9215BC6B22EE84650063CCB4 /* ViewPrizeViewController.swift in Sources */,
 				92D759D022CB2BB900C1AAA2 /* TermsViewController.swift in Sources */,
 				92EF244B22CEEDF400E810B0 /* User.swift in Sources */,
 				9264322622CC4E81006D9340 /* SettingsViewController.swift in Sources */,
